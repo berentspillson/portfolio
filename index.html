@@ -6,15 +6,26 @@
     </head>
 
     <body>
+    	<!-- Toggle-able nav tabs -->
         <ul class="nav nav-tabs">
         	<li class="nav-item">	
-        		<a class="nav-link active" href="#">About Me</a>
+        		<a class="nav-link active" data-toggle="tab" href="#home">Home</a>
+        	</li>        	<li class="nav-item">	
+        		<a class="nav-link active" data-toggle="tab" href="#about">About Me</a>
         	</li>
         	<li class="nav-item"></li>
-        		<a class="nav-link" href="#">Projects: UX Strategy & Design</a>
+        		<a class="nav-link" data-toggle="tab" href="#projects">Projects: UX Strategy & Design</a>
          	<li class="nav-item"></li>
-        		<a class="nav-link" href="#">Other</a>       
+        		<a class="nav-link" data-toggle="tab" href="#other">Other</a>       
         </ul>
+
+        <!-- Tab panes (for nav tab toggles) -->
+        <div class="tab content">
+        	<div class="tab-pane active container" id="home">...</div>
+        	<div class="tab-pane container" id="about">...</div>
+        	<div class="tab-pane container" id="projects">...</div>
+        	<div class="tab-pane container" id="other">...</div>
+        </div>
 
 
 
